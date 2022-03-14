@@ -54,7 +54,7 @@
 
 You can use different Add-ons/Extensions for it
 
-- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's prefereces page.
+- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
 - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
 
 ## 🎨 Customization
@@ -199,7 +199,7 @@ The same happens with the list links, you can change the list icon (also using L
 
 For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
 
-Finally, choose an Icon set:
+Then, choose an Icon set:
 
 ![](assets/img/icons.png)
 
@@ -208,16 +208,17 @@ Finally, choose an Icon set:
 - **Dark** For White theme only users that want a minimalist look
 - **White** For Dark theme only users that want a minimalist look
 
-Finally just add them to the `config.js` file.
+Finally just add them to the `config.js` file and add your API Key to the secret file.
 
 ```js
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
   weatherIcons: 'OneDark',
   weatherUnit: 'C',
   weatherLatitude: '37.774929',
   weatherLongitude: '-122.419418',
 ```
+To Set API Key you need to go to `Settings → Enviroments → github-pages → Add secret → WEATHER_API_KEY`
+
 
 ### 💛 Colors
 
